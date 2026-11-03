@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asistentes CDMX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="chat">
+    <header>
+      <div class="brand">Asistentes CDMX</div>
+      <div class="agent-title" id="agent-title"></div>
+      <p class="agent-desc" id="agent-desc"></p>
+      <nav class="tabs" role="tablist">
+        <button type="button" class="tab active" data-agent="tramites" role="tab">Trámites</button>
+        <button type="button" class="tab" data-agent="eventos" role="tab">Eventos</button>
+      </nav>
+    </header>
+    <div id="messages" class="messages" aria-live="polite"></div>
+    <form id="form">
+      <input id="input" type="text" placeholder="Escribe tu pregunta..." autocomplete="off" required>
+      <button type="submit" id="send">Enviar</button>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
